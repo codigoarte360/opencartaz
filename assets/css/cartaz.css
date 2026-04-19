@@ -1,0 +1,44 @@
+@page {
+  size: A4;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  min-width: 1140px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+
+.cartaz-a4 {
+  width: 210mm;
+  height: 297mm;
+  margin: 5mm auto;
+  background: #fff;
+  box-sizing: border-box;
+}
+
+/* Preview na tela */
+@media screen {
+  .cartaz-a4 {
+    box-shadow: 0 0.5mm 2mm rgba(0,0,0,.3);
+  }
+}
+
+/* Impressão */
+@media print {
+  body {
+    background: none;
+    min-width: 0;
+  }
+  
+  .ui-elements {
+    display: none;
+  }
+
+  .cartaz-a4 {
+    margin: 0;
+    box-shadow: none;
+    overflow: hidden;
+  }
+}

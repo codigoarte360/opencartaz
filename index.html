@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+	<title>OpenCartaz - Gerar Cartaz</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="OpenCartaz, ferramenta web gratuita para gerar cartazes promocionais em formato A4, ideal para supermercados e comércios em geral.">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+	<link rel="stylesheet" href="/opencartaz/assets/css/layout.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,900" rel="stylesheet">
+	<link rel="icon" href="/opencartaz/assets/icons/favicon.png" type="image/png">
+	<script src="/opencartaz/assets/scripts/select-storage.js"></script>
+  </head>
+  <body class="w3-dark-gray">
+	<div class="w3-row">
+		<div class="w3-card w3-white w3-section" style="margin: 0 auto;max-width:500px">
+			<div class="w3-yellow w3-container">
+				<h2>OpenCartaz</h2>
+			</div>
+			<form class="w3-container w3-padding-top-32 " action="cartaz-impressao" method="get">
+				<label>Título do cartaz:</label>
+				<select id="selectTitle" class="w3-input w3-white w3-border" name="title" tabindex="1">
+					<option value="1">Promoção</option>
+					<option value="2">Oferta</option>
+					<option value="3">Sem título</option>
+				</select><br>
+				<label>Nome do produto:</label>
+				<input class="w3-input" type="text" placeholder="Pão Francês" name="product" tabindex="2" required><br>
+				<label>Descrição (Opcional):</label>
+				<input class="w3-input" type="text" placeholder="Tradicional" name="description" tabindex="3"><br><br>
+				<label class="w3-right">Preço:</label>
+				<div class="w3-row">
+					<input class="w3-input w3-right" type="text" placeholder="90" style="display: inline; width:36px; margin-left: 8px;" name="price_cents" tabindex="5" required>
+					<input class="w3-input w3-right" type="text" placeholder="19" name="price_int" style="text-align:right; width:54px; display: inline;" tabindex="4" required>
+				</div><br>
+				<label class="w3-right">Unidade: (Opcional)</label><br>
+				<input class="w3-input w3-right" type="text" placeholder="kg" name="unit" style="text-align:right; width:100px;" tabindex="6"><br><br>
+				<button type="submit" class="w3-button w3-yellow w3-round w3-right w3-section w3-large w3-card" tabindex="7">Gerar Cartaz</button>
+			</form>
+		</div>
+	</div>
+	<footer class="w3-container w3-yellow w3-center">
+		<a href="sobre" class="w3-right w3-hover-gray w3-container"><p>Sobre o OpenCartaz</p></a>
+	</footer>
+  </body>
+</html>
