@@ -6,7 +6,7 @@ Ferramenta web para gerar cartazes promocionais em formato A4, ideal para superm
 
 A ferramenta funciona online, para acessa-la clique no link abaixo:
 
-[https://codigoarte360.github.io/opencartaz](https://codigoarte360.github.io/opencartaz)
+[https://codigoarte360.github.io/opencartaz](https://codigoarte360.github.io/opencartaz/)
 
 ## Tela Principal
 
